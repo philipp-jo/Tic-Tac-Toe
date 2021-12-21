@@ -72,11 +72,11 @@ class TicTacToe:
 
     def game_start(self):
         message = '''
-    #########  #    ####      #########    #       ####      #########    ####    #####
+    # # # # #  #    # # #     # # # # #    #       # # #     # # # # #    ####    # # #
         #      #   #              #       # #     #              #       #    #   #
-        #      #   #     ####     #      #   #    #     ####     #       #    #   #####
-        #      #   #              #     # ### #   #              #       #    #   #
-        #      #    ####          #    #       #   ####          #        ####    #####
+        #      #   #      ####    #      #   #    #      ####    #       #    #   # # #
+        #      #   #              #     # # # #   #              #       #    #   #
+        #      #    # # #         #    #       #   # # #         #        ####    # # #
     '''
         print(message)
         print('############################################################################################')
@@ -116,7 +116,7 @@ class TicTacToe:
                 print('It\'s a draw!')
                 break
 
-            # switch player if not won or draw
+            # switch player if neither won or draw
             if player_name == player1.name and player_symb == player1.symb:
                 player_name = player2.name
                 player_symb = player2.symb
