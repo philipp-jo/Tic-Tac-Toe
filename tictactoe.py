@@ -89,7 +89,6 @@ class TicTacToe:
         
         # init gameboard
         self.setup_board()
-        self.display_board()
 
         # determine starting player
         player_symb = player1.symb if self.starting_player == 1 else player2.symb
